@@ -1,0 +1,56 @@
+.todo-item {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: .5px solid silver;
+    font-weight: 300;
+    font-size: .8em;
+    padding: 10px;
+}
+
+.del-btn {
+    border: none;
+    background-color: #fff;
+    font-weight: 700;
+    font-size: .8em;
+    cursor: pointer;
+}
+
+.del-btn:hover {
+    color: rgb(177, 13, 13);
+}
+
+input[type=checkbox] {
+    position: relative;
+    cursor: pointer;
+    width: 1px;
+}
+
+input[type=checkbox]:before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    top: 0;
+    left: 0;
+    border: .5px solid #636363;
+    border-radius: 50%;
+    background-color: #fff;
+}
+
+input[type=checkbox]:checked:after {
+    content: "";
+    display: block;
+    width: 5px;
+    height: 10px;
+    border: solid #5cd961;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+    position: absolute;
+    top: -3px;
+    left: 4px;
+}
